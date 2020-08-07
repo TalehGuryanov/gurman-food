@@ -19,7 +19,7 @@ export class ToastService {
       type: 'error'
     }
 
-    if (code <= 400) {
+    if (code < 400) {
       toast.title = 'Success!'
       toast.type = 'success'
     }

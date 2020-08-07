@@ -5,7 +5,9 @@
     "ng": "ng",
     "start:server": "node server.js",
     "start:app": "ng serve",
+    "start:prod": "node server.js --prod",
     "build": "ng build",
+    "heroku-postbuild": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -51,5 +53,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
+  },
+  "engines": {
+    "node": "12.1.0",
+    "npm": "6.9.0"
   }
 }
